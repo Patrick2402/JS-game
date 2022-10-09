@@ -26,10 +26,8 @@ document.addEventListener('keydown',(event) =>{
 });
 function OutofXPosition(topek,num){
     var topValue = lbStyle.getPropertyValue(topek).replace("px", "");
-    if((Number(topValue) >= 700 && num == 2) 
-    || (Number(topValue) >= 700 && num == 4)
-    || (Number(topValue) <= 0 && num == 1)
-    || (Number(topValue) <= 0 && num == 3)) {
+    if((Number(topValue) >= 700 && (num == 2 || num == 4)) 
+    || (Number(topValue) <= 0 && (num == 1 || num == 3))){
  
     }else{
         switch (num){
